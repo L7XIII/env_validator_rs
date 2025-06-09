@@ -33,6 +33,7 @@ impl fmt::Display for ConfigError {
 
 impl std::error::Error for ConfigError {}
 
+#[derive(Clone, Debug)]
 pub struct EnvConfig {
     vars: HashMap<String, String>,
 }
